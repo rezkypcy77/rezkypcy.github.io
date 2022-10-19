@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <center><h2>Login Here</h2></center>
+    <div class="login">
+        <form action="index.html" method="POST" onSubmit="validasi()">
+            <div>
+                <label>Username:</label>
+                <input type="text" name="nama" id="nama" />
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <div>
+           
+                <input type="submit" value="Login" class="tombol">
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="login.js">
+    function validasi() {
+        var nama = document.getElementById("nama").value;
+        var password = document.getElementById("password").value;
+       
+        if (nama =="rezky" && password=="12345" ) {
+            return true;
+        }else{
+            alert('Nama dan password anda salah !');
+            return false;
+        }
+    }
+</script>
+</html>
